@@ -5,27 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>টাকা আয় করুন - বিজ্ঞাপন দেখুন</title>
     <script>
-  // নিজের GitHub-ads.json ফাইল থেকে বিজ্ঞাপন লোড করা
-  fetch("https://github.com/abirabir390-maker/-MoneysFactory_Bot/blob/main/ads.json?raw=true")
-
-
-    .then(res => res.json())
-    .then(data => {
-      let ad = data[Math.floor(Math.random() * data.length)];
-      document.write(`
-        <div style="text-align:center; margin:10px;">
-          <a href="${ad.link}" target="_blank">
-            <img src="${ad.image}" width="100%" alt="${ad.title}">
-          </a>
-          <p>${ad.title}</p>
-        </div>
-      `);
-    })
-    .catch(() => {
-      document.write("<p style='color:red;text-align:center;'>বিজ্ঞাপন লোড করা যায়নি।</p>");
-    });
-</script>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+fetch("https://github.com/abirabir390-maker/-MoneysFactory_Bot/blob/main/ads.json?raw=true")
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         :root {
             --primary-color: #4a6bff;
@@ -1176,6 +1157,7 @@
     </script>
 </body>
 </html>
+
 
 
 
